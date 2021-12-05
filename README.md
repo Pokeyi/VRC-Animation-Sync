@@ -1,2 +1,2 @@
 # VRC-Animation-Sync
-UTC animation sync for VRChat:
+UTC animation sync for VRChat.
