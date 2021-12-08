@@ -53,7 +53,7 @@ namespace Pokeyi.UdonSharp
             targetAnimator.Play(stateHash, 0, (Convert.ToSingle((utcTicks - ((utcTicks / animLong) * animLong))) / animSingle));
         }
 
-        public void _EventSyncUTC()
+        public void _EventSyncUTC() // *Public/Protected*
         {   // Sync animation via keyframe event if enabled:
             if (eventSyncUTC) SyncAnimUTC();
         }
