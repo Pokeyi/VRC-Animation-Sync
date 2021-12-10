@@ -44,7 +44,7 @@ Designate at which points in runtime you want the animation to synchronize.
 - Frame Sync UTC - Sync animation every frame.
 
 ### Keyframe Event
-Call the public "\_EventSyncUTC" method to trigger a re-synchronization.
+Call the public "\_EventSyncUTC" method to trigger a re-synchronization. (See: Notes [#1](#notes))
 - This can be done without any programming via 'SendCustomEvent' from the dropdown when adding a Keyframe Event to a keyframe in your animation.
 
 ### UTC-Sync
