@@ -19,7 +19,6 @@ Errors regarding functions not being exposed likely mean you need an updated ver
 Other useful VRChat world-creation tools that I will always recommend.
 - [World Creator Assistant](https://github.com/Varneon/WorldCreatorAssistant) (SDK & Package Management)
 - [CyanEmu](https://github.com/CyanLaser/CyanEmu) (Unity-Window Testing)
-- [Udon Platform Hook](https://github.com/Superbstingray/UdonPlayerPlatformHook) (Moving-Platform Functionality)
 
 ### Setup
 Make sure you have already imported the VRChat Worlds SDK and UdonSharp into your project.
