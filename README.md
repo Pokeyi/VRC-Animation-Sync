@@ -1,4 +1,4 @@
-# VRC-Animation-Sync [![Downloads](https://img.shields.io/github/downloads/Pokeyi/VRC-Animation-Sync/total?logo=github)](https://github.com/Pokeyi/VRC-Animation-Sync/releases)
+# 🚧 VRC-Animation-Sync [![Downloads](https://img.shields.io/github/downloads/Pokeyi/VRC-Animation-Sync/total?logo=github)](https://github.com/Pokeyi/VRC-Animation-Sync/releases)
  UTC animation sync for VRChat. 
  
 ![Anim Sync Image](P_AnimSync.png)
