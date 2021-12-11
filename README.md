@@ -45,7 +45,7 @@ Designate at which points in runtime you want the animation to synchronize.
 
 ### Keyframe Event
 Call the public "\_EventSyncUTC" method to trigger a re-synchronization. (See: Notes [#1](#notes))
-- This can be done without any programming via 'SendCustomEvent' from the dropdown when adding a Keyframe Event to a keyframe in your animation.
+- This can be done without any programming by selecting 'SendCustomEvent(String)' from the dropdown when adding a Keyframe Event to a keyframe in your animation.
 
 ### UTC-Sync
 UTC-Sync is a method of syncing motions or events for all players without the use of networking by aligning them with Universal Time as a shared frame of refence.
