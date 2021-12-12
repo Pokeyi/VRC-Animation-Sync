@@ -6,7 +6,7 @@
 ## Overview
 🚧 This project is functional but in early stages with additional features planned. 🚧
 
-VRC Animation Sync is a single configurable UdonSharp behaviour that can be used to easily sync animations for all players.
+VRC Animation Sync is a single configurable UdonSharp behaviour that can be used to easily sync animations for all players without networking.
 
 It is intended to be efficient and relatively simple to use without the need for any additional editor scripts or dependencies outside of UdonSharp. All configuration can be done within the Unity Inspector window without the need for any programming, Udon, or SDK knowledge. That said, the source code is cleanly-organized and commented in the hopes of also being a good learning tool.
 
