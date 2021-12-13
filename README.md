@@ -48,7 +48,7 @@ Call the public "\_EventSyncUTC" method to trigger a re-synchronization. (See: N
 - This can be done without any programming by selecting 'SendCustomEvent(String)' from the dropdown when adding a Keyframe Event to a keyframe in your animation.
 
 ### UTC-Sync
-UTC-Sync is a method of syncing motions or events for all players without the use of networking by aligning them with Universal Time as a shared frame of refence.
+UTC-Sync is a method of syncing motions or events for all players without the use of networking by aligning them with Universal Time as a shared frame of reference.
 - The only caveat to this form of syncing is that each player's local machine must have had its clock [synchronized](https://youtu.be/VZBxG6v0gYQ). This is usually done automatically by Windows. The latest synchronization can be checked in your Date & Time Settings, but it should be very rare that this would need to be worried about manually.
 
 ### Use Case Examples
