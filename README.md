@@ -3,6 +3,11 @@
  
 ![Anim Sync Image](P_AnimSync.png)
 
+## 🛑 Important Note 🛑
+This script is intended as an easy syncing solution for *simple looping animations* without important start/stop sequences or transitions. Please read the documentation for details on its use including [UTC-Sync](https://github.com/Pokeyi/VRC-Animation-Sync#utc-sync) and [Use Case Examples](https://github.com/Pokeyi/VRC-Animation-Sync#use-case-examples) for possible caveats.
+
+You can not blindly slap this script on anything with an animation and expect it to sync properly.
+
 ## Overview
 VRC Animation Sync is a single configurable UdonSharp behaviour that can be used to easily sync animations for all players without networking.
 
@@ -38,6 +43,7 @@ All of the following properties have hover-tooltips in the Unity Inspector windo
 ### Sync Toggles
 Designate at which points in runtime you want the animation to synchronize.
 - Start Sync UTC - Sync animation once at start.
+- On Enable Sync UTC - Sync animation each time game object is enabled.
 - Event Sync UTC - Sync animation via called events.
 - Frame Sync UTC - Sync animation every frame.
 
