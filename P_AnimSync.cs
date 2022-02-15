@@ -22,17 +22,27 @@ namespace Pokeyi.UdonSharp
         [Space] // Animation event keyframe: SendCustomEvent(String)
         [Tooltip("Sync animation to UTC once at start.")]
         [SerializeField] private bool startSyncUTC;
+        [Tooltip("Sync animation to UTC when game object is enabled.")]
+        [SerializeField] private bool onEnableSyncUTC;
         [Tooltip("Sync animation via keyframe events.")]
         [SerializeField] private bool eventSyncUTC;
         [Tooltip("Sync animation to UTC every frame. (Probably don't.)")]
         [SerializeField] private bool frameSyncUTC;
 
         private Animator targetAnimator; // Reference to animator component.
+        private bool hasStarted = false;
 
         public void Start()
         {   // Assign reference to animator component and sync animation at start if enabled:
             targetAnimator = GetComponent<Animator>();
             if (startSyncUTC) SyncAnimUTC();
+            hasStarted = true;
+        }
+
+        public void OnEnable()
+        {
+            if (!hasStarted) return;
+            if (onEnableSyncUTC) SyncAnimUTC();
         }
 
         public void Update()
