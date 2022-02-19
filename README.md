@@ -23,6 +23,7 @@ Errors regarding functions not being exposed likely mean you need an updated ver
 Other useful VRChat world-creation tools that I will always recommend.
 - [World Creator Assistant](https://github.com/Varneon/WorldCreatorAssistant) (SDK & Package Management)
 - [CyanEmu](https://github.com/CyanLaser/CyanEmu) (Unity-Window Testing)
+- [VRWorld Toolkit](https://github.com/oneVR/VRWorldToolkit) (World Debugger)
 
 ### Setup
 Make sure you have already imported the VRChat Worlds SDK and UdonSharp into your project.
@@ -53,7 +54,8 @@ Call the public "\_EventSyncUTC" method to trigger a re-synchronization. (See: N
 
 ### UTC-Sync
 UTC-Sync is a method of syncing motions or events for all players without the use of networking by aligning them with Universal Time as a shared frame of reference.
-- The only caveat to this form of syncing is that each player's local machine must have had its clock [synchronized](https://youtu.be/VZBxG6v0gYQ). This is usually done automatically by Windows. The latest synchronization can be checked in your Date & Time Settings, but it should be very rare that this would need to be worried about manually.
+- The main caveat to this form of syncing is that each player's local machine must have had its clock [synchronized](https://youtu.be/VZBxG6v0gYQ). This is usually done automatically by Windows. The latest synchronization can be checked in your Date & Time Settings, but it should be very rare that this would need to be worried about manually.
+- Since they are synced to Universal Time and not a player or network event, animations will behave as if they have always been playing even before the world loaded and will be synced to the same playback position regardless of instance or player join times, so it is best not to use this method to sync animations with important start/stop times or transitions.
 
 ### Use Case Examples
 For now, this behaviour is best suited for simple looping animations. It should support changing animations as long as you re-sync afterwards, but the transition may not be smooth.
@@ -65,7 +67,7 @@ For now, this behaviour is best suited for simple looping animations. It should 
 1. Per the VRChat API, public method/event names starting with an "\_Underscore" are protected from remote network calls, necessitating use of a local-only event. Doing this protects them from being called by malicious clients and potentially breaking functionality in your world.
 
 ## Credit & Support
-Please credit me as Pokeyi if you use my work. I would also love to see your creations that make use of it if you're inclined to share. This and [related projects](https://github.com/Pokeyi/pokeyi.github.io#my-projects) at release have involved over three months of solid work and self-education as I strive for an opportunity to change careers and make a better life for myself. If you find value in my work, please consider supporting me, I appreciate it more than you can imagine!
+Please credit me as Pokeyi if you use my work. I would also love to see your creations that make use of it if you're inclined to share. This and [related projects](https://github.com/Pokeyi/pokeyi.github.io#my-projects) have involved many months of solid work and self-education as I strive for an opportunity to change careers and make a better life for myself. If you find value in my work, please consider supporting me, it would truly help a lot.
 
 [![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon)](https://patreon.com/pokeyi)
 
