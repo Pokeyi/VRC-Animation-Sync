@@ -52,9 +52,11 @@ namespace Pokeyi.UdonSharp
 
         private void SyncAnimUTC()
         {   // Retrieve current animation clip length and animator state, sync animation to UTC time:
+            if (targetAnimator == null) return;
             AnimatorClipInfo[] currentAnims = targetAnimator.GetCurrentAnimatorClipInfo(0);
+            if (currentAnims == null) return;
             AnimationClip currentClip = currentAnims[0].clip;
-            if ((targetAnimator == null) || (currentClip == null)) return;
+            if (currentClip == null) return;
             float animationSeconds = currentClip.length;
             int stateHash = targetAnimator.GetCurrentAnimatorStateInfo(0).shortNameHash;
             long utcTicks = DateTime.UtcNow.Ticks; // Convert animation time and decimal spaces to align seconds with UTC ticks:
