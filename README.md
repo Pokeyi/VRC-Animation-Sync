@@ -3,6 +3,9 @@
  
 ![Anim Sync Image](P_AnimSync.png)
 
+### VRChat Creator Companion App (VCC)
+***This project can now be imported through VCC with the [Pokeyi's Udon Tools](https://github.com/Pokeyi/vpm-packages#vpm-packages) VPM package.***
+
 ## 🛑 Important Note 🛑
 This script is intended as an easy syncing solution for *simple looping animations* without important start/stop sequences or transitions. Please read the documentation for details on its use including [UTC-Sync](https://github.com/Pokeyi/VRC-Animation-Sync#utc-sync) and [Use Case Examples](https://github.com/Pokeyi/VRC-Animation-Sync#use-case-examples) for possible caveats.
 
